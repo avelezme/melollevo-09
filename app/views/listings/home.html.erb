@@ -1,3 +1,13 @@
+
+    <% active_session = session.fetch(:user_id) %>
+    <% if active_session != nil %>
+      <%= "You are already signed in!" %>
+    <% else %>
+      <%= "Remember to sign in or sign up above!" %>
+    <% end %>
+<hr>
+
+
 <h1>
 Welcome to MeloLLevo!
 </h1>
